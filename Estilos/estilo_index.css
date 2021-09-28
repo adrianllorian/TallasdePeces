@@ -1,0 +1,141 @@
+/*FUENTES*/
+@font-face {
+		font-family:"Regular";
+		src:url("Fuentes/Cabin-Regular.ttf")
+
+}
+
+
+@font-face {
+		font-family:"Titulo";
+		src:url("Fuentes/AmaticSC-Bold.ttf")
+
+}
+
+/*Fondo del cuerpo*/
+body {
+				background-image:url(Imagenes/portada.JPG);
+
+}
+
+/*Foto de fondo de la pagina */
+#fondo {margin-top:10%;
+				margin-left:30%;
+				}
+/*Boton que nos lleva a la página*/
+#boton { text-decoration: none; /* quitar el subrallado del enlace */
+				font-weight: 600; /*Grososr de las letras*/
+				font-size: 20px;/*Tamaño de las letras*/
+				color:#ffffff;
+				padding-top:15px;
+				padding-bottom:15px;
+				padding-left:40px;
+				padding-right:40px;
+				background-color:#444740;
+				border-color: #000000; /*Color de borde*/
+				opacity: 0.9;
+
+				margin-left: -400px;
+				box-shadow: 2px 2px 25px #C8C8C8; /* Sombra exterior */
+				box-shadow: 2px 2px 25px #C8C8C8 inset; /* Sombra interior */
+				font-family: Regular;
+				/*animation*/
+				animation: textoportada3 5s;
+				}
+
+/*logo de la la ortada*/
+#logo { width: 500px;
+				height: 300px;
+				animation: textoportada2 5s;
+}
+
+/*Titulo de la pagina*/
+#titulo {color: #0865EC;
+		font-family: Titulo;
+		text-shadow: -1px -1px 0 #fff; /* Sombra en el texto */
+		letter-spacing:12px; /*Espacio entre letras*/
+		margin-left: 1%;
+		font-size: 5em; /*Tamaño de letra*/
+		animation: bounce 5s infinite;
+
+}
+
+/* Hover */
+/* boton al pasar por encima cambia de color */
+#boton:hover{background-color: #104AE6;
+
+}
+
+
+/*Animacion*/
+		@keyframes textoportada2{
+0%
+		{ opacity: 0; /*Empieza con total transparencia*/
+		}
+
+30%
+		{opacity: 0; /*Empieza a no poner opacidad*/
+		}
+100%
+		{opacity: 1;
+		}
+}
+
+
+/*Animacion */
+	@keyframes textoportada3{
+0% {opacity: 0; /*Empieza con total trnasferencia*/
+		}
+
+60%
+		{opacity: 0; /*Empieza a tener opaciadad*/
+		}
+100%
+		{opacity: 1;
+		}
+}
+
+@keyframes bounce {
+ /* Tiene la animacion para que las letras peguen tres saltos */
+
+		from,
+		0% {opacity:0}
+	20%,
+	53%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	40%,
+	43% {
+		-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		-webkit-transform: translate3d(0, -30px, 0);
+		transform: translate3d(0, -30px, 0);
+	}
+
+	70% {
+		-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		-webkit-transform: translate3d(0, -15px, 0);
+		transform: translate3d(0, -15px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, -4px, 0);
+		transform: translate3d(0, -4px, 0);
+	}
+		100%{
+				opacity:1
+		}
+
+}
+
+
+
+
+

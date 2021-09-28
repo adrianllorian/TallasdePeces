@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8" > <!--Estilo de caracteres -->
+		<meta name="viewport" content = "width-devices-width, initial-scale=1.0"><!--Modo responsive -->
+		<title>Registro - Tallas de peces</title><!--Titulo de la web -->
+		<link rel="stylesheet" type="text/css" href="Estilos/estilo_Registro.css" media="screen" /><!--Enlace del css -->
+		<link rel="icon" type="image/png" href="Estilos/Imagenes/favicon.png"><!--favicon -->
+		</head>
+
+
+
+<body>
+
+
+<div id="fondo"> <!--Caja con el contenido del formulario -->
+
+		<img id="logo" src="Estilos/Imagenes/Tallas_de_peces.png" usemap="#principado"> <!--Logo de la web -->
+
+<!--mapa del logo de la web -->
+							 <map name="principado">
+
+		 <area shape="circle" coords="172, 46, 11" href="Pagina_Principal.html">
+
+		</map>
+
+
+	<!--Titulo de la web -->
+		<h1 id="titulo">TALLAS DE PECES</h1>
+
+
+
+
+<!--Formulario -->
+		<form name="formulario" id="formularios" method="post" action="/insertar_cv.php">
+
+				<br>
+
+				<h2>Rellerna con tus datos personales</h2>
+
+			<table>  <tr><th id="tablaizq">Nombre<br>
+		<input type="text" name="Nombre"> <!--Entrada de nombre tipo texto -->
+
+		<br>
+		<br>
+		Apellidos<br>
+
+				<input type="text" name="Apellidos" size="30"> <!--Entrada apellidos modo texto -->
+
+		<br>
+		<br>
+		Nick<br>
+		<input type="text" name="Nombre"> <!--Entrada apodo modo texto -->
+
+		<br>
+		<br>
+		Contraseña <br>
+
+				<input type="password" name="pass"> <!--Entrada de contraseña modo pass -->
+
+		<br>
+		<br>
+
+				Repite Contraseña <br> <!--Entrada repeticion de contraseña modo pass -->
+
+				<input type="password" name="pass">
+
+		<br>
+		<br>
+
+
+		DNI <br>
+
+				<input type="text" name="dni" size="10" required pattern="[0-9]{8}[a-zA-Z]{1}" maxlength="9"> <!-- Entras de dni con formato dni-->
+
+</th>
+
+		<th id ="tabladerch">Sexo
+				<br>
+
+				<input type="radio" name="sexo" checked>Hombre <!--Dos check input para el sexo -->
+		<br>
+				<input type="radio" name="sexo1">Mujer
+		<br>
+		<br>
+				<br>
+
+				 Provincia <!-- Menu desplegable con comunidades autonomas -->
+				<br>
+				<select name="menu">
+	<option>- selecciona - </option>
+	<option>Asturias</option>
+	<option>Madrid</option>
+	<option>Cantabria</option>
+	<option>Navarra</option>
+	<option>Asturias</option>
+	<option>Cataluña</option>
+	<option>Murcia</option>
+	<option>La Rioja</option>
+	<option>Pais Vasco</option>
+	<option>Castilla y Leon</option>
+	<option>Castilla la Mancha</option>
+	<option>Extremadura</option>
+				</select>
+<br>
+<br>
+<br>
+
+		Fecha de nacimiento <!--Fecha de nacimiento modo calendario -->
+		<br>
+ <input type="date" name="fecha">
+<br>
+<br>
+<br>
+<br>
+Temas de interés
+<br>
+<select name="menu" size="5" multiple> <!--Seleccion multiple -->
+	<option value="1">Motor</option>
+	<option value="2">Moda</option>
+	<option value="3">Deporte</option>
+	<option value="4">Joyas</option>
+	<option value="5">Viajes</option>
+	<option value="6">Aventura</option>
+	<option value="7">Electronica</option>
+
+</select>
+			 </th> </tr>
+
+				</table>
+					<br>
+				<br>
+
+			<!--Checked de suscribirse  -->
+		<input type="checkbox" name="checkfinal" checked> Suscribirme al boletin de novedades
+		<br>
+		<br>
+			<!--Botones -->
+		<input type="submit" name="guardar"  id="verde" value="Enviar"><!--Para enviar datos -->
+			<input type="reset" id="rojo" name="reset" value="Borrar datos introducidos"><!--Para borrar datos -->
+		<br>
+		<br>
+
+		</form>
+
+		</div>
+
+<!--Pie de pagian -->
+		<footer id="foot">
+				<div id=nombre>
+						<h3> Diseñado por</h3>
+						<h2>Adrián Llorián</h2>
+						<br>
+						<h3> © 2018-2019</h3>
+				</div>
+
+				<div id ="contacto">
+						<h3> Contacto</h3>
+						<h2>bochiclase@gmail.com</h2>
+
+				</div>
+
+		</footer>
+
+		</body>
+
+</html>

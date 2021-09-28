@@ -1,0 +1,189 @@
+/*FUENTES*/
+@font-face {
+		font-family:"Regular";
+		src:url("Fuentes/Cabin-Regular.ttf")
+
+}
+
+
+@font-face {
+		font-family:"Titulo";
+		src:url("Fuentes/AmaticSC-Bold.ttf")
+
+}
+
+/*Fondo de la pagian*/
+body {
+				background-image:url(Imagenes/portada.JPG);
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+}
+
+/*Para central el cuadro del formulario dentro*/
+#fondo {margin: auto 0;
+
+}
+
+/*Estilo del formulario*/
+#formularios {
+		background-color: #F3F3F3;
+		margin-left: 15%;
+		margin-right: 15%;
+		margin-bottom: 10%;
+		margin-top: 10%;
+		padding-left: 5%;
+		box-shadow: 5px 5px 25px #C0C2C3;
+		box-shadow: 5px 5px 25px #929292 inset;
+		font-family: Regular;
+		font-size: 1.5em;
+		color:#0865EC;
+		font-weight:bold;
+
+}
+
+#tamano {background-color: white 0.1;
+
+			 }
+
+/*Titulo de la pagina*/
+#titulo {color: #0865EC;
+		font-family: Titulo;
+		text-shadow:
+	 -1px -1px 0 #fff;
+		letter-spacing:12px;
+		margin-left: 3%;
+		animation: bounce 3s infinite;
+
+}
+
+/* PIE DE PAGINA */
+
+#foot {
+		width: 81%;
+		margin-left: -1%;
+		height: 200px;
+		background-color: #6B6B6B;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 1%;
+}
+
+
+
+#nombre {
+				float: left;
+				font-family: foot;
+}
+
+#contacto {
+		float:left;
+		margin-left: 50%;
+		font-family: foot;
+}
+
+#nombre h2{
+		color: #8DCDF2;
+}
+
+#contacto h2{
+		color:#8DCDF2;
+}
+
+
+/*BOTONES*/
+/*Boton de envir datos*/
+#verde{
+		background-color: limegreen;
+		color:white;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		padding-left: 15%;
+		padding-right: 15%;
+		font-size: 1em;
+		border-radius: 10px;
+		box-shadow: 5px 5px 25px #929292;
+		margin: 1%;
+}
+
+#verde:hover{background-color: green;}
+
+
+/*Boton de borrar datos*/
+#rojo{
+		background-color: #FF4F4F;
+		color:white;
+		padding: 2%;
+		font-size: 1em;
+		border-radius: 10px;
+		box-shadow: 5px 5px 25px #929292;
+		margin: 1%;
+}
+
+#rojo:hover{background-color: #FF0000;}
+
+
+/*Imagen del logo*/
+#logo{float: left;}
+
+
+/*Estilo de los inpunt*/
+input{font-family: Regular;
+				font-size: 1em;}
+
+/*Estilo de las opciones*/
+option{ font-family: Regular;
+				font-size: 1.4em;
+
+}
+
+
+/*Tabla */
+
+/*Columna de la izquierda*/
+#tablaizq {
+		text-align: left;
+}
+/*Columna de la derecha*/
+#tabladerch{
+		text-align: right;
+}
+
+
+/*ANIMACIONES*/
+@keyframes bounce {
+	from,
+	20%,
+	53%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	40%,
+	43% {
+		-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		-webkit-transform: translate3d(0, -30px, 0);
+		transform: translate3d(0, -30px, 0);
+	}
+
+	70% {
+		-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		-webkit-transform: translate3d(0, -15px, 0);
+		transform: translate3d(0, -15px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, -4px, 0);
+		transform: translate3d(0, -4px, 0);
+	}
+
+
+}

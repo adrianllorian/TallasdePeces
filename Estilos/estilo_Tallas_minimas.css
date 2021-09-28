@@ -1,0 +1,355 @@
+/*FUENTES*/
+@font-face {
+		font-family:"Regular";
+		src:url("Fuentes/Cabin-Regular.ttf")
+
+}
+@font-face {
+		font-family:"Cuerpo";
+		src:url("Fuentes/Muli-Regular.ttf")
+
+}
+@font-face {
+		font-family:"Foot";
+src:url("Fuentes/Comfortaa-Regular.ttf")
+}
+
+@font-face {
+		font-family:"Titulo";
+		src:url("Fuentes/AmaticSC-Bold.ttf")
+
+}
+
+
+		/* PARALLEX */
+/*El parallex es para dejar una imagen fija despues de un scroll*/
+
+#parallex2{ /*Pararellex de la primera foto*/
+	background-image: url("Imagenes/Parallax2.jpg");
+	min-height: 700px; /*Altura minima*/
+	margin-top: -10%;
+	background-attachment: fixed; /* Imagen fija */
+	background-position: center; /* Posisicion centrada */
+	background-repeat: no-repeat; /*Solo una imagen */
+	background-size: cover; /* Escala la imagen a su maximo tamaño */
+	margin-left: -10px;
+
+}
+
+
+
+
+
+
+/* CUERPO DE LA PAGINA*/
+
+/*Es es primer fondo la foto de mar va en un div*/
+#fondo {background-image: url(Imagenes/imagen_de_fondo.jpeg);
+				background-size:cover; /*Para poner la imagen a su maximo tamaño*/
+				display: inline-block; /* No afecta a los otros elementos de web*/
+				background-attachment: fixed; /* Para fijar la foto de manera fija */
+				margin-top: 10%;
+				margin-left: -1%;
+				margin-right: 0%;
+				}
+
+/* Segunda caja donde va el texto va dentro de la caja fondo*/
+#cajatexto {
+				background-color: #FFFFFF;
+				margin-left: 3%;
+				margin-right: 3%;
+				margin-top: 3%;
+				padding-left: 15%;
+				padding-right: 15%;
+				padding-top: 3%;
+				padding-bottom:3%;
+				margin-bottom: 3%;
+				text-align: justify;
+				font-family: Cuerpo;
+				font-size: 1.3em;
+				box-shadow: 5px 5px 25px #888686 inset; /* Sombra interior */
+
+
+
+}
+
+/* Para los titutos de la caja de texto*/
+#cajatexto h2 { color: #00AAFF;
+
+}
+
+
+
+
+/*PIE DE PAGIANA*/
+
+#foot { /*Estilo de la etiqueta foot*/
+		width: 81%;
+		height: 200px;
+		background-color: #6B6B6B;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 1%;
+		margin-left: -1%;
+
+}
+
+/*Estilo del texto del footer*/
+#nombre {
+				float: left;
+				font-family: foot;
+}
+
+#contacto {
+		float:left;
+		margin-left: 50%;
+		font-family: foot;
+}
+
+#nombre h2{
+		color: #8DCDF2;
+}
+
+#contacto h2{
+		color:#8DCDF2;
+}
+
+/* MENU */
+
+/*Cuadro del menú*/
+#cabezera {
+				/*background-image: url(Imagenes/menu.jpg);*/
+				background-color: white;
+				background-size: cover; /* Estira la imagen */
+				width: 110%;
+				height: 20%;
+				display: block;  /* Su posicion no afecta a los demas objetos de la web y para centrar con los margin*/
+				position:fixed;  /* Para fijar el menu en la parte de arriba */
+				margin-left: -3%;
+				margin-right: -3%;
+				margin-top: -1%;
+				float: left;
+				box-shadow: 5px 5px 25px #C0C2C3; /* Sombras */
+
+
+				}
+/* enlaces <a></a> para quitar el formato que viene por defecto*/
+#enlaces { text-decoration: none;
+						color:#00AAFF;
+						letter-spacing: 3px; /* Espacio de la letra */
+
+				}
+/*Logo de la empresa*/
+#imagen {float: left;
+
+				}
+/*Listas para el menu*/
+#listas li{list-style-type: none;
+		padding: 5px;
+		border: solid 0px #06ACF9;
+		float: left;
+		background-color: #C0C2C3;
+		opacity: 0.8;
+		padding-left: 1.5%;
+		padding-right:1.5%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		margin-top: 0.9%;
+		font-size: 1.3em;
+		font-family: Regular;
+		box-shadow: 3px 3px 25px #64C2FF inset; /*Sombra interior */
+		box-shadow: 2px 2px 25px #64C2FF;
+
+}
+/*boton de login */
+#login {list-style-type: none; /*Elimina los estilos de lista */
+		padding: 5px;
+		border: solid 0px #06ACF9;
+		float: left;
+		background-color: #8DCDF2;
+		opacity: 0.8;
+		padding-left: 1.5%;
+		padding-right:1.5%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		margin-top: 0.9%;
+		margin-left: 5%;
+		font-size: 1em;
+		font-family: Regular;
+		box-shadow: 2px 2px 25px #0090ED inset; /*Sombra interior*/
+
+}
+/*Boton de registro*/
+#registro {list-style-type: none; /* Quito los estilos predeterminados de as listas <ul>*/
+		padding: 5px;
+		border: solid 0px #06ACF9;
+		float: left;
+		background-color: #9EF28D;
+		opacity: 0.8;
+		padding-left: 1.5%;
+		padding-right:1.5%;
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+		margin-top: 0.9%;
+		font-size: 1em;
+		font-family: Regular;
+		box-shadow: 2px 2px 25px #00B80E inset; /* Sombra interior */
+
+
+}
+
+
+
+/* HOVER DE MENU*/
+/*al pasar la flexha del raton por encima de los botones de menú que van en la lista*/
+#listas li:hover{ color: black;
+								text-decoration: underline black; /* Subrayado negro*/
+								background-color: #00AAFF;
+}
+/*al pasar la flecha del raton por encima de los botones de la etiqueta <a></a>*/
+		#enlaces:hover{ color: black;
+								text-decoration: underline black;
+								background-color: #00AAFF;
+}
+/*Hover al pasar con el raton por encima del cuadro*/
+#cabezera:hover{background-color: white;
+
+}
+/*Hover al pasar con el raton por encima del boton login*/
+#login:hover{ color: black;
+								text-decoration: underline black;
+								background-color: #00AAFF;
+}
+/*Hover al pasar con el raton por encima del registro*/
+#registro:hover{ color: black;
+								text-decoration: underline black;
+								background-color: #00AAFF;
+}
+
+
+
+
+
+
+
+
+		/*TABLA DE PECES*/
+/*Tabla a la izquierda*/
+#tabla{
+		float: left;
+		margin-right: 5%;
+		background-color: white;
+		border: solid 3px #F3F3F3;
+		margin-bottom: 5%;
+		margin-left: 3%;
+		box-shadow: 5px 5px 25px #C0C2C3; /* Sombra para dar volumen */
+
+
+}
+/*Tabla a la derecha*/
+#tabla2{
+		border: solid 3px #F3F3F3;
+		background-color: white;
+		margin-bottom: 5%;
+		box-shadow: 5px 5px 25px #C0C2C3; /* Sombra para dar volumen */
+
+}
+
+
+/*Para centrar la imagen de la tabla de la izquierda*/
+#tabla tr td img{
+		width: 100%;
+
+		/* Para centrar */
+		 display:block;
+	margin-left: auto;
+	margin-right: auto;
+
+
+
+}
+/*Para centrar la imagen en ela tabla*/
+#tabla2 tr td img{
+		width: 100%;
+
+		/* Para centrar */
+		 display:block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+/*Titulo de arriba del menu*/
+#titulo2 {  font-size: 2em;
+						animation: bounce 3s infinite;
+						color: #0865EC;
+						font-family: Titulo;
+						text-shadow: -1px -1px 0 #fff;
+						letter-spacing:12px;
+}
+/*Estilo del contenido de la tabla <th>*/
+#titulo{font-size: 2em;
+				color: #C0C2C3;
+
+
+}
+/*Frase "Talla minima" es su estilo de contenido*/
+#frase {
+		color: #5A5A5A;
+		 box-shadow: 5px 5px 25px #C0C2C3 inset; /* Sombra interior */
+}
+/*Estilo de la medida*/
+#cm {padding-top: 5%;
+		padding-bottom: 5%;
+		text-align: center;
+		font-size: 1.3em;
+		color:#02B2FF;
+		background-color: #BBE8B9;
+		box-shadow: 5px 5px 25px green inset; /* Sombra interior */
+
+}
+/*Nombre del pez*/
+#titulo {color: #0865EC;
+		font-family: Titulo;
+		text-shadow: -1px -1px 0 #fff;
+		letter-spacing:12px;
+
+}
+
+/*ANIMACIONES*/
+
+/*La del titulo*/
+@keyframes bounce {
+	from,
+	20%,
+	53%,
+	80%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	40%,
+	43% {
+		-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		-webkit-transform: translate3d(0, -30px, 0);
+		transform: translate3d(0, -30px, 0);
+	}
+
+	70% {
+		-webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		-webkit-transform: translate3d(0, -15px, 0);
+		transform: translate3d(0, -15px, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(0, -4px, 0);
+		transform: translate3d(0, -4px, 0);
+	}
+
+
+}
+
